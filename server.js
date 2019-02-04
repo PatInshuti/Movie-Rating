@@ -13,6 +13,4 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use("/api/movieList", ListRouter);
 app.use("/api/movieProfile",ProfileRouter);
 
-app.listen(port, ()=>{
-    console.log("Running on " + port);
-});
+app.listen(port, ()=> console.log("Running on " + port) );
